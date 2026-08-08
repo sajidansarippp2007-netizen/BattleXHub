@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>BattleXHub Admin</title>
+
+<link rel="stylesheet" href="admin.css">
+
+</head>
+
+<body>
+
+<div id="overlay"></div>
+
+<header class="topBar">
+
+<div class="leftBox">
+
+<img src="assets/logo.png" class="logo" alt="Logo">
+
+<div>
+
+<h2>BattleXHub Admin</h2>
+
+<p>Premium Control Panel</p>
+
+</div>
+
+</div>
+
+<div class="rightBox">
+
+<button id="logoutBtn" class="logoutBtn">
+🚪 Logout
+</button>
+
+</div>
+
+</header>
+
+<div class="welcomeCard">
+
+<div class="welcomeLeft">
+
+<h2>Welcome Admin 👋</h2>
+
+<p>
+Manage tournaments, users, deposits,
+withdraws and complete app from one place.
+</p>
+
+</div>
+
+<img src="assets/logo.png" class="welcomeLogo" alt="Logo">
+
+</div>
+
+<h2 class="sectionTitle">
+Dashboard
+</h2>
+
+<div class="dashboard">
+
+<div class="card" id="usersCard">
+
+<div class="icon">👥</div>
+
+<h3>Total Users</h3>
+
+<p id="totalUsers">0</p>
+
+</div>
+
+<div class="card" id="withdrawCard">
+
+<div class="icon">💸</div>
+
+<h3>Withdraw</h3>
+
+<p id="withdrawCount">0</p>
+
+</div>
+
+<div class="card" id="tournamentCard">
+
+<div class="icon">🏆</div>
+
+<h3>Tournament Manager</h3>
+
+<span>Manage Matches</span>
+
+</div>
+
+<div class="card" id="userManager">
+
+<div class="icon">👤</div>
+
+<h3>User Manager</h3>
+
+<span>Manage Players</span>
+
+</div>
+
+<div class="card" onclick="location.href='adminDeposit.html'">
+
+<div class="icon">💰</div>
+
+<h3>Deposit Manager</h3>
+
+</div>
+
+<div class="card" onclick="location.href='adminSettings.html'">
+
+<div class="icon">⚙️</div>
+
+<h3>Settings</h3>
+
+</div>
+
+<div class="card" onclick="location.href='adminNotification.html'">
+
+<div class="icon">🔔</div>
+
+<h3>Notifications</h3>
+
+</div>
+
+<div class="card" onclick="location.href='adminCategory.html'">
+
+<div class="icon">📂</div>
+
+<h3>Categories</h3>
+
+</div>
+
+<div class="card" onclick="location.href='adminAnnouncement.html'">
+
+<div class="icon">📢</div>
+
+<h3>Announcement</h3>
+
+</div>
+<div class="card" onclick="location.href='adminBanner.html'">
+
+<div class="icon">🖼️</div>
+
+<h3>Banner Manager</h3>
+
+</div>
+</div>
+
+<script type="module" src="admin.js"></script>
+
+</body>
+
+</html>

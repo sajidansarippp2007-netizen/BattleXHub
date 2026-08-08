@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>BattleXHub Admin Banner</title>
+
+<link rel="stylesheet" href="adminBanner.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>🖼 Banner Manager</h1>
+
+<div class="card">
+
+<label>Banner Image URL</label>
+
+<input
+type="text"
+id="bannerUrl"
+placeholder="https://example.com/banner.jpg">
+
+<label>Banner Link</label>
+
+<input
+type="text"
+id="bannerLink"
+placeholder="https://youtube.com/...">
+
+<img
+id="previewBanner"
+class="preview"
+style="display:none;">
+
+<button id="saveBanner">
+➕ Add Banner
+</button>
+
+</div>
+
+<h2>All Banners</h2>
+
+<div id="bannerList"
+class="bannerList">
+
+</div>
+
+</div>
+
+<script type="module"
+src="adminBanner.js"></script>
+
+</body>
+</html>
