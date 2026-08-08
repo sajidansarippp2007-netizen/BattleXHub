@@ -1,0 +1,599 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+}
+
+body{
+
+background:#071120;
+
+color:#fff;
+
+padding-bottom:90px;
+
+}
+
+/* ===========================
+HEADER
+=========================== */
+
+.profileHeader{
+
+position:relative;
+
+text-align:center;
+
+padding:45px 20px;
+
+background:linear-gradient(180deg,#12284d,#0b1833);
+
+border-bottom:2px solid #20c8ff;
+
+box-shadow:0 0 25px rgba(0,180,255,.35);
+
+overflow:hidden;
+
+}
+
+.coverGlow{
+
+position:absolute;
+
+top:-120px;
+
+left:50%;
+
+transform:translateX(-50%);
+
+width:320px;
+
+height:320px;
+
+background:#20c8ff;
+
+filter:blur(120px);
+
+opacity:.25;
+
+border-radius:50%;
+
+}
+
+.profileHeader h1{
+
+position:relative;
+
+font-size:36px;
+
+font-weight:bold;
+
+color:#fff;
+
+text-shadow:0 0 18px #20c8ff;
+
+margin-bottom:8px;
+
+}
+
+.profileTag{
+
+position:relative;
+
+font-size:16px;
+
+color:#9edcff;
+
+}
+
+/* ===========================
+MAIN
+=========================== */
+
+.profilePage{
+
+padding:18px;
+
+display:flex;
+
+flex-direction:column;
+
+gap:18px;
+
+}
+/* ===========================
+REFERRAL CARDS
+=========================== */
+
+.referralCard{
+
+background:linear-gradient(180deg,#13284d,#0d1b38);
+
+border:2px solid rgba(0,180,255,.25);
+
+border-radius:22px;
+
+padding:22px;
+
+box-shadow:0 0 20px rgba(0,180,255,.15);
+
+transition:.3s;
+
+}
+
+.referralCard:hover{
+
+border-color:#20c8ff;
+
+box-shadow:0 0 28px rgba(0,180,255,.35);
+
+transform:translateY(-2px);
+
+}
+
+.referralCard h2{
+
+font-size:34px;
+
+text-align:center;
+
+color:#20c8ff;
+
+margin-bottom:12px;
+
+text-shadow:0 0 12px #20c8ff;
+
+}
+
+.referralCard h3{
+
+font-size:25px;
+
+text-align:center;
+
+color:#fff;
+
+margin-bottom:18px;
+
+}
+
+.referralCard p{
+
+font-size:16px;
+
+line-height:28px;
+
+text-align:center;
+
+color:#bcdcff;
+
+}
+
+/* ===========================
+REFERRAL CODE
+=========================== */
+
+.referralRow{
+
+display:flex;
+
+gap:12px;
+
+align-items:center;
+
+}
+
+#referralCode{
+
+flex:1;
+
+height:52px;
+
+background:#081424;
+
+border:2px solid rgba(0,180,255,.30);
+
+border-radius:14px;
+
+padding:0 15px;
+
+font-size:18px;
+
+font-weight:bold;
+
+color:#20c8ff;
+
+outline:none;
+
+}
+
+#copyBtn{
+
+width:110px;
+
+height:52px;
+
+border:none;
+
+border-radius:14px;
+
+background:linear-gradient(90deg,#19b8ff,#5865ff);
+
+color:#fff;
+
+font-size:16px;
+
+font-weight:bold;
+
+cursor:pointer;
+
+transition:.3s;
+
+box-shadow:0 0 16px rgba(0,180,255,.35);
+
+}
+
+#copyBtn:hover{
+
+transform:scale(1.04);
+
+box-shadow:0 0 24px rgba(0,180,255,.55);
+
+}
+
+/* ===========================
+SHARE BUTTON
+=========================== */
+
+#shareBtn{
+
+width:100%;
+
+height:58px;
+
+border:none;
+
+border-radius:16px;
+
+background:linear-gradient(90deg,#19b8ff,#5865ff);
+
+color:#fff;
+
+font-size:20px;
+
+font-weight:bold;
+
+cursor:pointer;
+
+transition:.3s;
+
+box-shadow:0 0 20px rgba(0,180,255,.35);
+
+}
+
+#shareBtn:hover{
+
+transform:scale(1.02);
+
+box-shadow:0 0 28px rgba(0,180,255,.55);
+
+}
+/* ===========================
+STATS CARD
+=========================== */
+
+.statsCard{
+
+display:grid;
+
+grid-template-columns:repeat(2,1fr);
+
+gap:16px;
+
+}
+
+.statBox{
+
+background:linear-gradient(180deg,#13284d,#0d1b38);
+
+border:2px solid rgba(0,180,255,.25);
+
+border-radius:20px;
+
+padding:22px;
+
+text-align:center;
+
+box-shadow:0 0 18px rgba(0,180,255,.18);
+
+transition:.3s;
+
+}
+
+.statBox:hover{
+
+border-color:#20c8ff;
+
+box-shadow:0 0 28px rgba(0,180,255,.40);
+
+transform:translateY(-2px);
+
+}
+
+.statBox h2{
+
+font-size:36px;
+
+margin-top:10px;
+
+color:#20c8ff;
+
+text-shadow:0 0 10px #20c8ff;
+
+}
+
+.statBox p{
+
+font-size:16px;
+
+color:#bcdcff;
+
+}
+
+/* ===========================
+REFERRAL HISTORY
+=========================== */
+
+#referralHistory{
+
+display:flex;
+
+flex-direction:column;
+
+gap:15px;
+
+margin-top:10px;
+
+}
+
+.historyItem{
+
+background:#0d1b38;
+
+border:2px solid rgba(0,180,255,.20);
+
+border-radius:16px;
+
+padding:15px;
+
+transition:.3s;
+
+}
+
+.historyItem:hover{
+
+border-color:#20c8ff;
+
+box-shadow:0 0 18px rgba(0,180,255,.35);
+
+}
+
+.historyItem h4{
+
+font-size:18px;
+
+color:#fff;
+
+margin-bottom:6px;
+
+}
+
+.historyItem p{
+
+font-size:14px;
+
+color:#9edcff;
+
+text-align:left;
+
+}
+
+/* ===========================
+EMPTY BOX
+=========================== */
+
+.emptyBox{
+
+text-align:center;
+
+padding:35px 20px;
+
+background:#0d1b38;
+
+border:2px dashed rgba(0,180,255,.30);
+
+border-radius:20px;
+
+}
+
+.emptyBox h2{
+
+font-size:24px;
+
+color:#20c8ff;
+
+margin-bottom:10px;
+
+}
+
+.emptyBox p{
+
+font-size:15px;
+
+color:#bcdcff;
+
+line-height:24px;
+
+}
+/* ===========================
+BOTTOM NAVIGATION
+=========================== */
+
+.bottomNav{
+
+position:fixed;
+
+left:0;
+
+bottom:0;
+
+width:100%;
+
+height:70px;
+
+background:#0d1630;
+
+border-top:2px solid #1cb5ff;
+
+display:flex;
+
+justify-content:space-around;
+
+align-items:center;
+
+z-index:999;
+
+box-shadow:0 -5px 20px rgba(0,180,255,.25);
+
+}
+
+.bottomNav a{
+
+flex:1;
+
+text-align:center;
+
+text-decoration:none;
+
+color:#ffffff;
+
+font-size:22px;
+
+padding-top:6px;
+
+transition:.3s;
+
+}
+
+.bottomNav a p{
+
+font-size:12px;
+
+margin-top:4px;
+
+}
+
+.bottomNav a.active{
+
+color:#1cb5ff;
+
+}
+
+.bottomNav a.active p{
+
+color:#1cb5ff;
+
+font-weight:bold;
+
+}
+
+/* ===========================
+RESPONSIVE
+=========================== */
+
+@media(max-width:600px){
+
+.profileHeader{
+
+padding:35px 15px;
+
+}
+
+.profileHeader h1{
+
+font-size:28px;
+
+}
+
+.profileTag{
+
+font-size:14px;
+
+}
+
+.referralCard{
+
+padding:18px;
+
+}
+
+.referralCard h2{
+
+font-size:28px;
+
+}
+
+.referralCard h3{
+
+font-size:22px;
+
+}
+
+.referralRow{
+
+flex-direction:column;
+
+}
+
+#referralCode{
+
+width:100%;
+
+}
+
+#copyBtn{
+
+width:100%;
+
+}
+
+.statsCard{
+
+grid-template-columns:1fr;
+
+}
+
+.statBox h2{
+
+font-size:30px;
+
+}
+
+}
+
+/* ===========================
+SMOOTH EFFECT
+=========================== */
+
+button{
+
+transition:.3s;
+
+}
+
+button:active{
+
+transform:scale(.96);
+
+}

@@ -1,0 +1,598 @@
+/* ====================================
+BattleXHub Premium Profile UI
+Part 1
+==================================== */
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+}
+
+html{
+scroll-behavior:smooth;
+}
+
+body{
+background:#08101f;
+color:#fff;
+padding-bottom:90px;
+overflow-x:hidden;
+}
+
+/* ===========================
+PROFILE PAGE
+=========================== */
+
+.profilePage{
+width:100%;
+padding:18px;
+}
+
+/* ===========================
+HEADER
+=========================== */
+
+.profileHeader{
+
+position:relative;
+
+background:linear-gradient(180deg,#132a52,#0c1732);
+
+border:2px solid rgba(0,180,255,.25);
+
+border-radius:28px;
+
+padding:35px 20px;
+
+text-align:center;
+
+box-shadow:0 0 25px rgba(0,180,255,.25);
+
+overflow:hidden;
+
+margin-bottom:22px;
+
+}
+
+.coverGlow{
+
+position:absolute;
+
+top:-120px;
+left:50%;
+
+transform:translateX(-50%);
+
+width:280px;
+height:280px;
+
+background:#19b8ff;
+
+opacity:.18;
+
+filter:blur(90px);
+
+border-radius:50%;
+
+}
+
+/* ===========================
+PROFILE IMAGE
+=========================== */
+
+.profilePhoto{
+
+position:relative;
+
+width:120px;
+height:120px;
+
+border-radius:50%;
+
+border:4px solid #22c8ff;
+
+object-fit:cover;
+
+box-shadow:
+0 0 20px #1cb5ff,
+0 0 45px rgba(0,180,255,.5);
+
+margin-bottom:18px;
+
+}
+
+.profileHeader h2{
+
+font-size:30px;
+
+font-weight:bold;
+
+margin-bottom:8px;
+
+}
+
+.profileTag{
+
+font-size:17px;
+
+color:#36d3ff;
+
+margin-bottom:6px;
+
+}
+
+#userEmail{
+
+font-size:15px;
+
+color:#b8c9e8;
+
+}
+/* ===========================
+STATS CARD
+=========================== */
+
+.statsCard{
+
+display:grid;
+
+grid-template-columns:repeat(2,1fr);
+
+gap:15px;
+
+margin-bottom:22px;
+
+}
+
+.statBox{
+
+background:linear-gradient(180deg,#13284d,#0d1b38);
+
+border:2px solid rgba(0,180,255,.20);
+
+border-radius:20px;
+
+padding:18px;
+
+text-align:center;
+
+box-shadow:0 0 18px rgba(0,180,255,.15);
+
+transition:.3s;
+
+}
+
+.statBox:hover{
+
+transform:translateY(-3px);
+
+box-shadow:0 0 22px rgba(0,180,255,.35);
+
+}
+
+.statBox p{
+
+font-size:15px;
+
+color:#7fdfff;
+
+margin-bottom:8px;
+
+}
+
+.statBox h2{
+
+font-size:28px;
+
+font-weight:bold;
+
+color:#ffffff;
+
+}
+
+/* ===========================
+REFERRAL CARD
+=========================== */
+
+.referralCard{
+
+background:linear-gradient(180deg,#13284d,#0d1b38);
+
+border:2px solid rgba(0,180,255,.20);
+
+border-radius:22px;
+
+padding:18px;
+
+margin-bottom:22px;
+
+box-shadow:0 0 18px rgba(0,180,255,.15);
+
+}
+
+.referralCard h3{
+
+font-size:22px;
+
+margin-bottom:15px;
+
+color:#27d6ff;
+
+}
+
+.referralRow{
+
+display:flex;
+
+gap:12px;
+
+}
+
+#referralCode{
+
+flex:1;
+
+height:48px;
+
+border:none;
+
+outline:none;
+
+border-radius:14px;
+
+padding:0 15px;
+
+background:#081a35;
+
+color:#fff;
+
+font-size:16px;
+
+border:2px solid rgba(0,180,255,.25);
+
+}
+
+#copyReferral{
+
+width:95px;
+
+border:none;
+
+border-radius:14px;
+
+background:linear-gradient(90deg,#1CB5FF,#5865FF);
+
+color:#fff;
+
+font-size:16px;
+
+font-weight:bold;
+
+cursor:pointer;
+
+box-shadow:0 0 15px rgba(0,180,255,.35);
+
+transition:.3s;
+
+}
+
+#copyReferral:hover{
+
+transform:scale(1.04);
+
+}
+/* ===========================
+MENU CARD
+=========================== */
+
+.menuCard{
+
+display:flex;
+
+flex-direction:column;
+
+gap:16px;
+
+margin-bottom:25px;
+
+}
+
+.menuBtn{
+
+width:100%;
+
+display:flex;
+
+justify-content:space-between;
+
+align-items:center;
+
+padding:18px 20px;
+
+border:none;
+
+border-radius:20px;
+
+background:linear-gradient(180deg,#13284d,#0d1b38);
+
+border:2px solid rgba(0,180,255,.20);
+
+color:#fff;
+
+cursor:pointer;
+
+transition:.3s;
+
+box-shadow:0 0 18px rgba(0,180,255,.15);
+
+}
+
+.menuBtn:hover{
+
+transform:translateY(-3px);
+
+border-color:#20c8ff;
+
+box-shadow:0 0 25px rgba(0,180,255,.40);
+
+}
+
+.menuBtn div{
+
+text-align:left;
+
+}
+
+.menuBtn h3{
+
+font-size:19px;
+
+margin-bottom:5px;
+
+color:#ffffff;
+
+}
+
+.menuBtn p{
+
+font-size:14px;
+
+color:#8fdcff;
+
+}
+
+.menuBtn span{
+
+font-size:28px;
+
+font-weight:bold;
+
+color:#1fd4ff;
+
+}
+
+/* ===========================
+LOGOUT BUTTON
+=========================== */
+
+.logoutBtn{
+
+width:100%;
+
+height:58px;
+
+border:none;
+
+border-radius:18px;
+
+background:linear-gradient(90deg,#1CB5FF,#5865FF);
+
+color:#fff;
+
+font-size:20px;
+
+font-weight:bold;
+
+cursor:pointer;
+
+transition:.3s;
+
+box-shadow:0 0 20px rgba(0,180,255,.35);
+
+margin-bottom:25px;
+
+}
+
+.logoutBtn:hover{
+
+transform:scale(1.02);
+
+box-shadow:0 0 28px rgba(0,180,255,.55);
+
+}
+/* ===========================
+BOTTOM NAVIGATION
+=========================== */
+
+.bottomNav{
+
+position:fixed;
+
+left:0;
+bottom:0;
+
+width:100%;
+height:72px;
+
+display:flex;
+justify-content:space-around;
+align-items:center;
+
+background:#0d1630;
+
+border-top:2px solid #20c8ff;
+
+box-shadow:0 -4px 20px rgba(0,180,255,.20);
+
+z-index:999;
+
+}
+
+.bottomNav a{
+
+flex:1;
+
+text-decoration:none;
+
+text-align:center;
+
+color:#b8c9e8;
+
+font-size:24px;
+
+transition:.3s;
+
+}
+
+.bottomNav a p{
+
+font-size:12px;
+
+margin-top:4px;
+
+}
+
+.bottomNav a.active{
+
+color:#20c8ff;
+
+text-shadow:0 0 12px #20c8ff;
+
+}
+
+.bottomNav a.active p{
+
+color:#20c8ff;
+
+font-weight:bold;
+
+}
+
+/* ===========================
+RESPONSIVE
+=========================== */
+
+@media(max-width:600px){
+
+.profileHeader{
+
+padding:28px 15px;
+
+}
+
+.profilePhoto{
+
+width:100px;
+height:100px;
+
+}
+
+.profileHeader h2{
+
+font-size:24px;
+
+}
+
+.profileTag{
+
+font-size:15px;
+
+}
+
+.statsCard{
+
+grid-template-columns:repeat(2,1fr);
+
+gap:12px;
+
+}
+
+.statBox{
+
+padding:14px;
+
+}
+
+.statBox h2{
+
+font-size:22px;
+
+}
+
+.referralCard h3{
+
+font-size:19px;
+
+}
+
+#referralCode{
+
+font-size:14px;
+
+}
+
+#copyReferral{
+
+width:80px;
+
+font-size:14px;
+
+}
+
+.menuBtn{
+
+padding:15px;
+
+}
+
+.menuBtn h3{
+
+font-size:17px;
+
+}
+
+.menuBtn p{
+
+font-size:13px;
+
+}
+
+.logoutBtn{
+
+height:52px;
+
+font-size:18px;
+
+}
+
+.bottomNav{
+
+height:68px;
+
+}
+
+.bottomNav a{
+
+font-size:22px;
+
+}
+
+.bottomNav a p{
+
+font-size:11px;
+
+}
+
+}

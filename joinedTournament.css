@@ -1,0 +1,375 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+}
+
+body{
+background:#081321;
+color:#fff;
+min-height:100vh;
+}
+
+.page{
+width:100%;
+max-width:700px;
+margin:auto;
+padding:15px;
+}
+
+.topHeader{
+display:flex;
+align-items:center;
+gap:12px;
+margin-bottom:18px;
+}
+
+.backBtn{
+background:#00b8ff;
+border:none;
+color:#fff;
+padding:10px 18px;
+font-size:16px;
+font-weight:bold;
+border-radius:12px;
+cursor:pointer;
+}
+
+.titleBox{
+flex:1;
+}
+
+.titleBox h1{
+font-size:24px;
+font-weight:bold;
+color:#fff;
+}
+
+.titleBox p{
+margin-top:4px;
+font-size:13px;
+color:#8ecfff;
+}
+
+.mainCard{
+background:#122340;
+border-radius:20px;
+padding:15px;
+border:2px solid #1ea7ff;
+overflow:hidden;
+box-shadow:0 0 20px rgba(0,180,255,.25);
+}
+
+.tournamentBanner{
+width:100%;
+height:190px;
+display:block;
+object-fit:cover;
+border-radius:16px;
+}
+
+.tournamentTitle{
+font-size:24px;
+font-weight:bold;
+text-align:center;
+margin:15px 0;
+}
+
+.infoGrid{
+display:grid;
+grid-template-columns:repeat(2,1fr);
+gap:12px;
+margin-bottom:18px;
+}
+
+.infoCard{
+background:#19304f;
+border:1px solid #1ea7ff;
+border-radius:15px;
+padding:14px;
+text-align:center;
+}
+
+.infoCard span{
+display:block;
+font-size:13px;
+color:#9fdcff;
+margin-bottom:6px;
+}
+
+.infoCard b{
+font-size:18px;
+color:#fff;
+}
+/* =========================
+COUNTDOWN
+========================= */
+
+.countdownBox{
+background:#0b5f2d;
+border:2px solid #00ff88;
+border-radius:16px;
+padding:16px;
+margin:18px 0;
+text-align:center;
+box-shadow:0 0 15px rgba(0,255,120,.35);
+}
+
+.countdownTitle{
+font-size:14px;
+color:#baffd7;
+margin-bottom:8px;
+}
+
+.countdownTime{
+font-size:28px;
+font-weight:bold;
+color:#fff;
+letter-spacing:2px;
+}
+
+/* =========================
+ROOM BOX
+========================= */
+
+.roomBox{
+background:#112949;
+border:2px solid #00bfff;
+border-radius:16px;
+padding:15px;
+margin-top:18px;
+}
+
+.roomBox h3{
+text-align:center;
+margin-bottom:15px;
+color:#00d9ff;
+}
+
+.roomItem{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:12px;
+background:#19385d;
+border-radius:10px;
+margin-bottom:10px;
+}
+
+.roomItem:last-child{
+margin-bottom:0;
+}
+
+.roomItem span{
+color:#9fdcff;
+}
+
+.roomItem b{
+color:#fff;
+}
+
+/* =========================
+TABS
+========================= */
+
+.tabBox{
+display:flex;
+gap:10px;
+margin-top:20px;
+}
+
+.tabBtn{
+flex:1;
+padding:12px;
+border:none;
+border-radius:12px;
+background:#19304f;
+color:#fff;
+font-size:15px;
+font-weight:bold;
+cursor:pointer;
+transition:.3s;
+}
+
+.tabBtn.active{
+background:#00b8ff;
+}
+
+#tabContent{
+margin-top:18px;
+}
+/* =========================
+PLAYER CARD
+========================= */
+
+.playerCard{
+display:flex;
+align-items:center;
+gap:12px;
+background:#19304f;
+border:1px solid #1ea7ff;
+border-radius:15px;
+padding:14px;
+margin-bottom:12px;
+transition:.3s;
+}
+
+.playerCard:hover{
+transform:translateY(-2px);
+box-shadow:0 0 15px rgba(0,191,255,.35);
+}
+
+.playerPhoto{
+width:55px;
+height:55px;
+border-radius:50%;
+object-fit:cover;
+border:2px solid #00cfff;
+}
+
+.playerInfo{
+flex:1;
+}
+
+.playerInfo h3{
+font-size:17px;
+color:#fff;
+margin-bottom:4px;
+}
+
+.playerInfo p{
+font-size:13px;
+color:#9fdcff;
+}
+
+/* =========================
+RULES & RESULT
+========================= */
+
+.rulesBox,
+.resultBox,
+.emptyBox{
+background:#19304f;
+border:1px solid #1ea7ff;
+border-radius:15px;
+padding:16px;
+margin-top:15px;
+line-height:1.7;
+}
+
+.rulesBox h2,
+.resultBox h2{
+font-size:20px;
+margin-bottom:10px;
+color:#00d9ff;
+}
+
+.emptyBox{
+text-align:center;
+color:#9fdcff;
+}
+
+/* =========================
+BUTTONS
+========================= */
+
+.actionBtn{
+width:100%;
+margin-top:18px;
+padding:15px;
+border:none;
+border-radius:14px;
+background:linear-gradient(90deg,#00c6ff,#0072ff);
+color:#fff;
+font-size:17px;
+font-weight:bold;
+cursor:pointer;
+}
+
+.actionBtn:disabled{
+background:#666;
+cursor:not-allowed;
+}
+
+.copyBtn{
+padding:8px 14px;
+border:none;
+border-radius:8px;
+background:#00b8ff;
+color:#fff;
+cursor:pointer;
+}
+
+/* =========================
+SCROLLBAR
+========================= */
+
+::-webkit-scrollbar{
+width:5px;
+}
+
+::-webkit-scrollbar-thumb{
+background:#00b8ff;
+border-radius:10px;
+}
+
+/* =========================
+MOBILE
+========================= */
+
+@media(max-width:600px){
+
+.page{
+padding:12px;
+}
+
+.tournamentBanner{
+height:170px;
+}
+
+.tournamentTitle{
+font-size:20px;
+}
+
+.infoGrid{
+grid-template-columns:1fr 1fr;
+gap:10px;
+}
+
+.infoCard{
+padding:10px;
+}
+
+.infoCard b{
+font-size:16px;
+}
+
+.countdownTime{
+font-size:22px;
+}
+
+.roomItem{
+flex-direction:column;
+align-items:flex-start;
+gap:5px;
+}
+
+.tabBtn{
+font-size:13px;
+padding:10px;
+}
+
+.playerPhoto{
+width:45px;
+height:45px;
+}
+
+.playerInfo h3{
+font-size:15px;
+}
+
+.playerInfo p{
+font-size:12px;
+}
+}

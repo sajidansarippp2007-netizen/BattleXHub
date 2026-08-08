@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Wallet</title>
+
+<link rel="stylesheet" href="wallet.css">
+
+</head>
+
+<body>
+
+<div class="walletBox">
+
+<h1>👛 Wallet</h1>
+
+<h2>Your Balance</h2>
+
+<h3 id="coinText">0</h3>
+
+<hr>
+
+<h2>Deposit Coins</h2>
+
+<input
+type="number"
+id="depositAmount"
+placeholder="Enter Coins">
+
+<button id="depositBtn">
+💰 Deposit Request
+</button>
+
+<hr>
+
+<button id="withdrawBtn">
+💸 Withdraw
+</button>
+
+<hr>
+
+<h2>📜 History</h2>
+
+<button id="depositHistoryBtn">
+📥 Deposit History
+</button>
+
+<button id="withdrawHistoryBtn">
+📤 Withdraw History
+</button>
+
+<button id="coinHistoryBtn">
+🪙 Coin History
+</button>
+
+<button id="tournamentHistoryBtn">
+🎮 Tournament History
+</button>
+
+</div>
+
+<div id="overlay" class="overlay"></div>
+
+<div id="sideMenu" class="sideMenu">
+
+<div class="menuHeader">
+
+<img
+id="menuPhoto"
+class="menuPhoto"
+src="assets/logo.png">
+
+<h2 id="menuName">User</h2>
+
+<p id="menuCoins">
+🪙 0 Coins
+</p>
+
+</div>
+
+<a href="profile.html">👤 My Profile</a>
+
+<a href="wallet.html">👛 My Wallet</a>
+
+<a href="tournament.html">🏆 Tournament</a>
+
+<a href="leaderboard.html">🥇 Leaderboard</a>
+
+<a href="notifications.html">🔔 Notifications</a>
+
+<a href="#">📞 Contact Us</a>
+
+<a href="faq.html">❓ FAQ</a>
+
+<a href="about.html">ℹ️ About Us</a>
+
+<a href="privacy.html">🔒 Privacy Policy</a>
+
+<a href="terms.html">📜 Terms & Conditions</a>
+
+<a href="login.html">🚪 Logout</a>
+
+</div>
+
+<div class="bottomNav">
+
+<div
+class="navItem"
+onclick="location.href='home.html'">
+
+🏠
+
+<p>Home</p>
+
+</div>
+
+<div
+class="navItem"
+onclick="location.href='tournament.html'">
+
+🏆
+
+<p>Tournament</p>
+
+</div>
+
+<div
+class="navItem active"
+onclick="location.href='wallet.html'">
+
+👛
+
+<p>Wallet</p>
+
+</div>
+
+<div
+class="navItem"
+onclick="location.href='profile.html'">
+
+👤
+
+<p>Profile</p>
+
+</div>
+
+</div>
+
+<script type="module" src="wallet.js"></script>
+
+</body>
+
+</html>

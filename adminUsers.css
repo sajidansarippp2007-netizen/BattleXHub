@@ -1,0 +1,86 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+}
+
+body{
+background:#0d0d0d;
+color:white;
+padding:15px;
+}
+
+.topBar{
+display:flex;
+align-items:center;
+gap:15px;
+margin-bottom:20px;
+}
+
+.topBar button{
+background:#FFD700;
+border:none;
+padding:10px 18px;
+border-radius:10px;
+font-weight:bold;
+cursor:pointer;
+}
+
+.topBar h2{
+color:#FFD700;
+}
+
+.searchBox input{
+width:100%;
+padding:14px;
+border-radius:12px;
+border:2px solid #FFD700;
+background:#1b1b1b;
+color:white;
+font-size:16px;
+margin-bottom:20px;
+outline:none;
+}
+
+.userCard{
+background:#181818;
+border:2px solid #FFD700;
+border-radius:15px;
+padding:15px;
+margin-bottom:15px;
+}
+
+.userCard h3{
+color:#FFD700;
+margin-bottom:8px;
+}
+
+.userCard p{
+margin:5px 0;
+}
+
+.actionBtn{
+display:flex;
+gap:10px;
+margin-top:12px;
+}
+
+.actionBtn button{
+flex:1;
+padding:10px;
+border:none;
+border-radius:10px;
+font-weight:bold;
+cursor:pointer;
+}
+
+.addCoin{
+background:#00c853;
+color:white;
+}
+
+.removeCoin{
+background:#ff3b30;
+color:white;
+}

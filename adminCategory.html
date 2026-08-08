@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+<title>Category Manager</title>
+
+<link rel="stylesheet" href="adminCategory.css">
+
+</head>
+<link rel="stylesheet" href="popup.css">
+<script src="popup.js"></script>
+<body>
+
+<header class="topBar">
+
+<button onclick="history.back()">⬅ Back</button>
+
+<h2>Category Manager</h2>
+
+</header>
+
+<div class="form">
+
+<input
+id="categoryName"
+placeholder="Category Name">
+
+<input
+id="categoryBanner"
+placeholder="Banner Image URL">
+
+<button id="createCategoryBtn">
+
+Create Category
+
+</button>
+
+</div>
+
+<h2>📂 All Categories</h2>
+
+<div id="categoryList"></div>
+
+<script type="module" src="adminCategory.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Deposit</title>
+
+<link rel="stylesheet" href="wallet.css">
+
+</head>
+
+<body>
+
+<div class="walletBox">
+
+<h2>Deposit Coins</h2>
+
+<img src="assets/qr.png" width="220">
+
+<h3>Scan QR & Pay</h3>
+
+<p id="upiText">Loading UPI...</p>
+
+<h2 id="amountText"></h2>
+
+<label>UTR Number</label>
+
+<input
+type="text"
+id="utr"
+placeholder="Enter UTR Number"
+required>
+
+<label>Payment Screenshot</label>
+
+<input
+type="file"
+id="paymentScreenshot"
+accept="image/*">
+
+<button id="submitPayment">
+Submit Payment
+</button>
+
+</div>
+
+<script type="module" src="deposit.js"></script>
+
+</body>
+</html>

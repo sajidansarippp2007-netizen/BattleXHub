@@ -1,0 +1,117 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+}
+
+body{
+background:#0b1220;
+color:#fff;
+padding:15px;
+}
+
+.topBar{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:15px;
+background:#111827;
+border-radius:12px;
+margin-bottom:20px;
+}
+
+.topBar h2{
+color:#FFD700;
+font-size:22px;
+}
+
+.topBar button{
+background:#00bcd4;
+color:#fff;
+border:none;
+padding:10px 16px;
+border-radius:8px;
+font-weight:bold;
+}
+
+#depositList{
+display:flex;
+flex-direction:column;
+gap:18px;
+margin-top:20px;
+}
+
+.card{
+background:#1b2435;
+border-radius:15px;
+padding:18px;
+border:2px solid #FFD700;
+box-shadow:0 0 10px rgba(255,215,0,.2);
+}
+
+.card h3{
+color:#FFD700;
+margin-top:10px;
+}
+
+.card p{
+margin-top:5px;
+word-break:break-all;
+font-size:15px;
+}
+
+.card img{
+display:block;
+width:260px;
+max-width:100%;
+height:170px;
+margin:15px auto;
+object-fit:cover;
+border-radius:10px;
+border:2px solid #FFD700;
+}
+
+.approveBtn{
+width:100%;
+margin-top:15px;
+padding:14px;
+background:#00c853;
+color:#fff;
+border:none;
+border-radius:10px;
+font-size:16px;
+font-weight:bold;
+}
+
+.approveBtn:active{
+transform:scale(.98);
+}
+
+@media(max-width:600px){
+
+.card{
+padding:15px;
+}
+
+.card img{
+width:100%;
+height:auto;
+}
+
+}
+.rejectBtn{
+width:100%;
+margin-top:10px;
+padding:14px;
+background:#ff3b30;
+color:#fff;
+border:none;
+border-radius:10px;
+font-size:16px;
+font-weight:bold;
+}
+
+.rejectBtn:active{
+transform:scale(.98);
+}

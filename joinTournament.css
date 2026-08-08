@@ -1,0 +1,83 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+}
+
+body{
+background:#0b0b0b;
+display:flex;
+justify-content:center;
+align-items:center;
+min-height:100vh;
+padding:20px;
+}
+
+.joinBox{
+width:100%;
+max-width:420px;
+background:#181818;
+border:2px solid #FFD700;
+border-radius:20px;
+padding:20px;
+box-shadow:0 0 20px rgba(255,215,0,.3);
+}
+
+.joinBox h2{
+text-align:center;
+color:#FFD700;
+margin-bottom:15px;
+}
+
+.banner{
+width:100%;
+height:180px;
+object-fit:cover;
+border-radius:15px;
+margin-bottom:15px;
+}
+
+.joinBox h3{
+text-align:center;
+color:white;
+margin-bottom:10px;
+}
+
+.joinBox p{
+text-align:center;
+color:#FFD700;
+margin-bottom:20px;
+}
+
+.joinBox input{
+width:100%;
+padding:14px;
+margin-bottom:15px;
+border:none;
+border-radius:10px;
+background:#2a2a2a;
+color:white;
+font-size:16px;
+}
+
+.joinBox button{
+width:100%;
+padding:15px;
+margin-top:10px;
+border:none;
+border-radius:10px;
+font-size:17px;
+font-weight:bold;
+cursor:pointer;
+}
+
+#joinBtn{
+background:#2F80ED;
+color:white;
+}
+
+.joinBox button:last-child{
+background:#444;
+color:white;
+}

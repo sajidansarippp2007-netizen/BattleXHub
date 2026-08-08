@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>BattleXHub Settings</title>
+
+<link rel="stylesheet" href="adminSettings.css">
+
+</head>
+<link rel="stylesheet" href="popup.css">
+<script src="popup.js"></script>
+<body>
+
+<div class="container">
+
+<h1>⚙ BattleXHub Settings</h1>
+
+<!-- General -->
+
+<h2>General</h2>
+
+<input id="appName" placeholder="App Name">
+
+<input id="appVersion" placeholder="App Version">
+
+<label>
+<input type="checkbox" id="maintenance">
+Maintenance Mode
+</label>
+
+<hr>
+
+<!-- Payment -->
+
+<h2>Payment</h2>
+
+<input id="upiId" placeholder="UPI ID">
+
+<input id="qrImage" placeholder="QR Image URL">
+
+<label>
+<input type="checkbox" id="depositEnabled">
+Deposit ON
+</label>
+
+<label>
+<input type="checkbox" id="withdrawEnabled">
+Withdraw ON
+</label>
+
+<hr>
+
+<!-- Coins -->
+
+<h2>Coin Settings</h2>
+
+<input id="newUserBonus" type="number" placeholder="New User Bonus">
+
+<input id="referralBonus" type="number" placeholder="Referral Bonus">
+
+<input id="referralJoinBonus" type="number" placeholder="Referral Join Bonus">
+
+<input id="referralTournamentBonus" type="number" placeholder="Tournament Referral Bonus">
+
+<hr>
+
+<!-- Tournament -->
+
+<h2>Tournament</h2>
+
+<label>
+<input type="checkbox" id="tournamentEnabled">
+Tournament ON
+</label>
+
+<input id="roomRevealTime" type="number" placeholder="Room Reveal Time (Minutes)">
+
+<hr>
+
+<!-- Support -->
+
+<h2>Support</h2>
+
+<input id="telegram" placeholder="Telegram Username">
+
+<input id="whatsapp" placeholder="WhatsApp Number">
+
+<input id="supportEmail" placeholder="Support Email">
+
+<hr>
+
+<!-- Notification -->
+
+<h2>Notification</h2>
+
+<textarea id="popupNotice" placeholder="Popup Notice"></textarea>
+
+<textarea id="announcement" placeholder="Announcement"></textarea>
+
+<hr>
+
+<!-- Update -->
+
+<h2>App Update</h2>
+
+<label>
+
+<input type="checkbox" id="forceUpdate">
+
+Force Update
+
+</label>
+
+<input id="latestVersion" placeholder="Latest Version">
+
+<input id="updateLink" placeholder="Update Link">
+
+<hr>
+
+<!-- Branding -->
+
+<h2>Branding</h2>
+
+<input id="logo" placeholder="Logo URL">
+
+<input id="banner" placeholder="Banner URL">
+
+<br><br>
+
+<button id="saveSettings">
+
+💾 Save Settings
+
+</button>
+
+</div>
+
+<script type="module" src="adminSettings.js"></script>
+
+</body>
+
+</html>

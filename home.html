@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta
+name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>BattleXHub</title>
+
+<link rel="stylesheet" href="home.css">
+
+<link
+rel="icon"
+href="assets/logo.png">
+
+</head>
+
+<body>
+
+<!-- =========================
+OVERLAY
+========================= -->
+
+<div id="overlay"></div>
+
+<!-- =========================
+SIDE MENU
+========================= -->
+
+<div id="sideMenu" class="sideMenu">
+
+<div class="menuTop">
+
+<img
+id="menuPhoto"
+src="assets/profile.png">
+
+<h2 id="menuName">
+Player
+</h2>
+
+<p id="menuCoins">
+🪙 0 Coins
+</p>
+
+</div>
+
+<div class="menuItems">
+
+<a onclick="openProfile()">
+👤 Profile
+</a>
+
+<a onclick="openWallet()">
+💰 Wallet
+</a>
+
+<a onclick="showJoinedMatches()">
+🏆 My Tournament
+</a>
+
+<a onclick="openNotification()">
+🔔 Notifications
+</a>
+
+<button id="logoutBtn">
+Logout
+</button>
+
+</div>
+
+</div>
+
+<!-- =========================
+HEADER
+========================= -->
+
+<header class="topHeader">
+
+<div
+id="menuBtn"
+class="menuBtn">
+
+☰
+
+</div>
+
+<div class="logoArea">
+
+<img
+src="assets/logo.png"
+class="logo">
+
+<div>
+
+<h2>
+BattleXHub
+</h2>
+
+<p id="username">
+Esports Tournament
+</p>
+
+</div>
+
+</div>
+
+<div class="headerRight">
+
+<div class="coinBox">
+
+🪙
+
+<span id="coins">
+0
+</span>
+
+</div>
+
+<div
+class="notifyBox"
+onclick="openNotification()">
+
+🔔
+
+<span
+id="notificationCount">
+
+0
+
+</span>
+
+</div>
+
+</div>
+
+</header>
+
+<!-- =========================
+NOTICE
+========================= -->
+
+<div class="noticeBar">
+
+<marquee
+id="noticeText"
+scrollamount="5">
+
+📢 Welcome To BattleXHub
+
+</marquee>
+
+</div>
+
+<!-- =========================
+HOME BANNER
+========================= -->
+
+<section
+id="bannerSection"
+class="bannerSection">
+
+<div
+class="sliderTrack">
+
+<div class="slide">
+<img src="assets/banner.png" alt="BattleXHub Banner">
+</div>
+
+</div>
+
+</section>
+
+<!-- =========================
+CATEGORY TITLE
+========================= -->
+
+<div class="sectionTitle">
+
+🔥 Game Categories
+
+</div>
+
+<!-- =========================
+CATEGORY LIST
+========================= -->
+
+<div
+id="categoryList"
+class="categoryList">
+
+</div>
+<!-- =========================
+STATUS TABS
+========================= -->
+
+<div class="matchTabs">
+
+<button
+class="matchTab active"
+data-status="all">
+
+All
+
+</button>
+
+<button
+class="matchTab"
+data-status="live">
+
+Live
+
+</button>
+
+<button
+class="matchTab"
+data-status="upcoming">
+
+Upcoming
+
+</button>
+
+<button
+class="matchTab"
+data-status="completed">
+
+Completed
+
+</button>
+
+</div>
+
+<!-- =========================
+JOINED MATCHES
+========================= -->
+
+<div class="sectionTitle">
+
+🎮 My Joined Matches
+
+</div>
+
+<div
+id="joinedMatches"
+class="joinedMatches">
+
+<div class="emptyCard">
+
+No Joined Match
+
+</div>
+
+</div>
+
+<!-- =========================
+TOURNAMENT TITLE
+========================= -->
+
+<div class="sectionTitle">
+
+🏆 Available Tournaments
+
+</div>
+
+<!-- =========================
+TOURNAMENT CONTAINER
+========================= -->
+
+<div
+id="tournamentContainer"
+class="tournamentContainer">
+
+<!-- Firebase Tournament -->
+
+</div>
+
+<!-- =========================
+BOTTOM NAVIGATION
+========================= -->
+
+<nav class="bottomNav">
+
+<div
+class="navItem active">
+
+🏠
+
+<span>
+
+Home
+
+</span>
+
+</div>
+
+<div
+class="navItem"
+onclick="showJoinedMatches()">
+
+🏆
+
+<span>
+
+Tournament
+
+</span>
+
+</div>
+
+<div
+class="navItem"
+onclick="openWallet()">
+
+💰
+
+<span>
+
+Wallet
+
+</span>
+
+</div>
+
+<div
+class="navItem"
+onclick="openNotification()">
+
+🔔
+
+<span>
+
+Notification
+
+</span>
+
+</div>
+
+<div
+class="navItem"
+onclick="openProfile()">
+
+👤
+
+<span>
+
+Profile
+
+</span>
+
+</div>
+
+</nav>
+
+<!-- =========================
+LOADING
+========================= -->
+
+<div
+id="loadingScreen"
+class="loadingScreen">
+
+<div class="loader"></div>
+
+<p>
+
+Loading BattleXHub...
+
+</p>
+
+</div>
+
+<!-- =========================
+SCRIPTS
+========================= -->
+
+<script type="module" src="home.js"></script>
+
+<script
+type="module"
+src="push.js">
+
+</script>
+
+</body>
+
+</html>

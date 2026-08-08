@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Tournament Manager</title>
+
+<link rel="stylesheet" href="adminTournament.css">
+
+</head>
+
+<body>
+
+<header class="topBar">
+
+<button onclick="history.back()">⬅ Back</button>
+
+<h2>Tournament Manager</h2>
+
+</header>
+
+<div class="form">
+
+<input id="title" placeholder="Tournament Name">
+
+<input id="entry" type="number" placeholder="Entry Coins">
+
+<input id="prize" type="number" placeholder="Prize Coins">
+
+<input id="slots" type="number" placeholder="Player Slots">
+<input id="matchTime" type="datetime-local">
+<input id="roomId" placeholder="Room ID">
+
+<input id="roomPassword" placeholder="Room Password">
+<input id="banner" placeholder="Tournament Banner Image URL">
+<input id="map" placeholder="Map Name">
+
+<input id="mode" placeholder="Game Mode">
+
+<input id="perKill" type="number" placeholder="Per Kill Reward">
+
+<input id="roomOpenTime" type="number" placeholder="Room Open Before (Minutes)">
+
+<textarea id="rules" placeholder="Tournament Rules"></textarea>
+
+<textarea id="resultNote" placeholder="Result Note"></textarea>
+<select id="category">
+
+    <option value="all">🔥 ALL</option>
+
+    <option value="br">🏆 BR</option>
+
+    <option value="cs">⚔️ CS</option>
+
+    <option value="lonewolf">🐺 LONE WOLF</option>
+
+</select>
+<button id="createBtn">
+Create Tournament
+</button>
+
+</div>
+
+<h2>📋 All Tournaments</h2>
+
+<div id="tournamentList">
+
+</div>
+
+<script>
+alert("HTML Working");
+</script>
+
+<script type="module" src="./adminTournament.js?v=2"></script>
+
+</body>
+
+</html>

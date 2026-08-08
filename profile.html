@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>BattleXHub Profile</title>
+
+<link rel="stylesheet" href="profile.css">
+
+</head>
+<link rel="stylesheet" href="popup.css">
+<script src="popup.js"></script>
+<body>
+
+<div class="profilePage">
+
+<!-- ================= HEADER ================= -->
+
+<div class="profileHeader">
+
+<div class="coverGlow"></div>
+
+<img
+id="profilePhoto"
+class="profilePhoto"
+src="assets/logo.png">
+
+<h2 id="userName">
+Loading...
+</h2>
+
+<p class="profileTag">
+🎮 Esports Tournament
+</p>
+
+<p id="userEmail">
+Loading...
+</p>
+
+</div>
+
+<!-- ================= STATS ================= -->
+
+<div class="statsCard">
+
+<div class="statBox">
+
+<p>🪙 Coins</p>
+
+<h2 id="userCoins">
+0
+</h2>
+
+</div>
+
+<div class="statBox">
+
+<p>🏆 Wins</p>
+
+<h2 id="totalWins">
+0
+</h2>
+
+</div>
+
+<div class="statBox">
+
+<p>🎮 Matches</p>
+
+<h2 id="matchesPlayed">
+0
+</h2>
+
+</div>
+
+<div class="statBox">
+
+<p>💰 Earnings</p>
+
+<h2 id="totalEarnings">
+0
+</h2>
+
+</div>
+
+</div>
+
+<!-- ================= REFERRAL ================= -->
+
+<div class="referralCard">
+
+<h3>
+🎁 Referral Code
+</h3>
+
+<div class="referralRow">
+
+<input
+id="referralCode"
+readonly>
+
+<button id="copyReferral">
+
+Copy
+
+</button>
+
+</div>
+
+</div>
+
+<!-- ================= MENU ================= -->
+
+<div class="menuCard">
+
+<button class="menuBtn"
+onclick="location.href='wallet.html'">
+
+<div>
+
+<h3>👛 Wallet</h3>
+
+<p>Manage Coins & Withdraw</p>
+
+</div>
+
+<span>›</span>
+
+</button>
+
+<button class="menuBtn"
+onclick="location.href='refer.html'">
+
+<div>
+
+<h3>🎁 Refer & Earn</h3>
+
+<p>Invite Friends</p>
+
+</div>
+
+<span>›</span>
+
+</button>
+
+<button class="menuBtn"
+onclick="location.href='leaderboard.html'">
+
+<div>
+
+<h3>🏆 Leaderboard</h3>
+
+<p>Top Players Ranking</p>
+
+</div>
+
+<span>›</span>
+
+</button>
+<button class="menuBtn"
+onclick="location.href='notification.html'">
+
+<div>
+
+<h3>🔔 Notifications</h3>
+
+<p>Latest Updates & Alerts</p>
+
+</div>
+
+<span>›</span>
+
+</button>
+
+<button class="menuBtn"
+onclick="location.href='about.html'">
+
+<div>
+
+<h3>ℹ️ About</h3>
+
+<p>BattleXHub Information</p>
+
+</div>
+
+<span>›</span>
+
+</button>
+
+<button class="menuBtn"
+onclick="location.href='privacy.html'">
+
+<div>
+
+<h3>🔒 Privacy Policy</h3>
+
+<p>Your Data & Privacy</p>
+
+</div>
+
+<span>›</span>
+
+</button>
+
+<button class="menuBtn"
+onclick="location.href='terms.html'">
+
+<div>
+
+<h3>📜 Terms & Conditions</h3>
+
+<p>Read All Rules</p>
+
+</div>
+
+<span>›</span>
+
+</button>
+
+</div>
+
+<!-- ================= LOGOUT ================= -->
+
+<button
+id="logoutBtn"
+class="logoutBtn">
+
+🚪 Logout
+
+</button>
+
+</div>
+
+<!-- ================= BOTTOM NAV ================= -->
+
+<nav class="bottomNav">
+
+<a href="home.html">
+
+🏠
+
+<p>Home</p>
+
+</a>
+
+<a href="tournament.html">
+
+🏆
+
+<p>Tournament</p>
+
+</a>
+
+<a href="wallet.html">
+
+👛
+
+<p>Wallet</p>
+
+</a>
+
+<a href="profile.html" class="active">
+
+👤
+
+<p>Profile</p>
+
+</a>
+
+</nav>
+
+<script type="module" src="profile.js"></script>
+
+</body>
+</html>

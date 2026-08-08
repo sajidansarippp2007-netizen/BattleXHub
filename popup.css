@@ -1,0 +1,123 @@
+.popupOverlay{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:rgba(0,0,0,.55);
+backdrop-filter:blur(5px);
+display:flex;
+justify-content:center;
+align-items:center;
+z-index:999999;
+opacity:0;
+pointer-events:none;
+transition:.3s;
+}
+
+.popupOverlay.show{
+opacity:1;
+pointer-events:auto;
+}
+
+.popupBox{
+width:90%;
+max-width:360px;
+background:rgba(15,22,42,.96);
+border:1px solid rgba(0,191,255,.25);
+border-radius:24px;
+padding:25px;
+text-align:center;
+box-shadow:0 0 30px rgba(0,191,255,.25);
+animation:popupShow .25s ease;
+}
+
+.popupIcon{
+font-size:60px;
+margin-bottom:15px;
+}
+
+.popupTitle{
+font-size:24px;
+font-weight:bold;
+color:#fff;
+margin-bottom:10px;
+}
+
+.popupMessage{
+font-size:15px;
+color:#B8C7FF;
+line-height:24px;
+margin-bottom:25px;
+}
+/* =========================
+BUTTONS
+========================= */
+
+.popupButtons{
+display:flex;
+gap:12px;
+}
+
+.popupButtons button{
+flex:1;
+height:50px;
+border:none;
+border-radius:14px;
+font-size:16px;
+font-weight:bold;
+cursor:pointer;
+transition:.3s;
+}
+
+.popupOk{
+background:linear-gradient(135deg,#00BFFF,#6C63FF);
+color:#fff;
+}
+
+.popupCancel{
+background:#2B3557;
+color:#fff;
+}
+
+.popupButtons button:hover{
+transform:translateY(-2px);
+}
+
+.popupButtons button:active{
+transform:scale(.96);
+}
+
+/* =========================
+COLORS
+========================= */
+
+.success .popupIcon{
+color:#00E676;
+}
+
+.error .popupIcon{
+color:#FF5252;
+}
+
+.warning .popupIcon{
+color:#FFD54F;
+}
+
+/* =========================
+ANIMATION
+========================= */
+
+@keyframes popupShow{
+
+from{
+opacity:0;
+transform:scale(.85);
+}
+
+to{
+opacity:1;
+transform:scale(1);
+}
+
+}
